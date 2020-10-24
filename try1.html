@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+   <head>
+       <title>
+           USING HTML WITH CSS AND SOON STARTING JAVASCRIPT
+       </title>
+               <style>
+
+                h1.center{
+                 font-size:50px;
+                 text-align:center;
+                 background-color:dodgerblue;
+                 margin-left:150px;
+                 margin-right:150px;
+                }
+                table{
+                    border-collapse:collapse;
+                }
+                table,th,td{
+                    border:2px solid black;
+                    background-position:center;
+                    text-align:center;
+                    
+                }
+                td{
+                    vertical-align:bottom;
+                }
+                   </style>
+       </head>
+       <body>
+     <h1 class="center"> MAKING A TABLE OF A SHOPPING MALL</h1>
+     <table>
+         <tr>
+         <th>LIST ITEM </th>
+         <th> PRICES</th>
+         </tr>
+         <tr> 
+             <td> soap</td>
+             <td> 23</td>
+         </tr>
+         <tr> 
+            <td> bat</td>
+            <td> 800</td>
+        </tr>
+        <tr> 
+            <td> badminton</td>
+            <td> 3500</td>
+        </tr>
+        <tr> 
+            <td> baseball bat</td>
+            <td> 700</td>
+        </tr>
+         
+
+    </table>
+    <script>
+        function light(val)
+        {
+            var pic;
+               if(val==1)
+               {
+                   pic="https://www.w3schools.com/html/pic_bulbon.gif";
+               }
+               else
+               {
+                   pic="https://www.w3schools.com/html/pic_bulboff.gif";
+               }
+               document.getElementById("myimage").src=pic;
+        }</script>
+    <h2>light on and off</h2>
+    <img id ="myimage" src="https://www.w3schools.com/html/pic_bulboff.gif" alt="bulb">
+          <button type="button" onclick="light(1)">light on</button>
+          <button type="button" onclick="light(0)">light off</button>
+   
+        </script>
+       </body> 
+</html>
